@@ -125,7 +125,7 @@ class Player(object):
         md = base.win.getPointer(0)
         x = md.getX()
         y = md.getY()
-        if base.win.movePointer(0, base.win.getXSize()/2, base.win.getYSize()/2):
+        if base.win.movePointer(0, int(base.win.getXSize()/2), int(base.win.getYSize()/2)):
             self.node.setH(self.node.getH() -  (x - base.win.getXSize()/2)*0.1)
             base.camera.setP(base.camera.getP() - (y - base.win.getYSize()/2)*0.1)
         return task.cont
