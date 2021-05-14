@@ -5,7 +5,7 @@ mouse - look around
 """
 
 import direct.directbase.DirectStart
-from pandac.PandaModules import *
+from panda3d.core import *
 from direct.gui.OnscreenText import OnscreenText
 import sys
 
@@ -157,4 +157,4 @@ class Player(object):
         return task.cont
        
 FPS()
-run() 
+base.run()
